@@ -27,7 +27,7 @@ def poduglom():
     if ((range_ != 0 or height != 0) and (time != 0 or time == 0) and alpha == 0 and speed == 0):
         print('Error: По заданым параметрам посчитать нельзя')
         return None
-    if height < 0 or speed < 0 or time < 0 or alpha < 0 or alpha > 90:
+    if height < 0 or range_ < 0 or speed < 0 or time < 0 or alpha < 0 or alpha > 90:
         print('Error: Укажите неотрицательные значения')
         return None
     a.append(height)
