@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 from math import sqrt, cos, sin
 from matplotlib import pylab
 from numpy import arcsin
+from numpy import arctan
 import MailSent
 
 
@@ -35,6 +36,11 @@ def Height0(r, a, s, t, h):
             a = round((arcsin(dsinus) / 0.0173) / 2)
             t = 2 * s * sin(a / 180 * 3.14) / 9.8
             h = s ** 2 * sin(a / 180 * 3.14) ** 2 / 19.6
+        elif t != 0:
+            h = (t ** 2 * 9.8) / 8
+            tangens = r / (4 * h)
+            a = round(arctan(tangens) / 0.0173)
+            s = sqrt(2 * h * 9.8 / sin(a / 180 * 3.14) ** 2)
         else:
             s = sqrt(9.8 * r / sin(a * 2 / 180 * 3.14))
             h = s ** 2 * sin(a / 180 * 3.14) ** 2 / 19.6
