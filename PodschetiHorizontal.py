@@ -50,6 +50,7 @@ def HorOutPut(h, r, s, t):
         t1 += 0.01
         a.append(x)
         b.append(y)
+    plt.figure(figsize=(6, 6))
     plt.plot(a, b)
     max = r
     if r < h:
