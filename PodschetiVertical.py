@@ -18,6 +18,7 @@ def PodVertical(h, s, t):
         t = sqrt(2*h / 9.8)
     x = [h // 2, h // 2, h // 2]
     y1 = [0, h, 0]
+    plt.figure(figsize=(6, 6))
     plt.plot(x, y1)
     pylab.xlim(0, h + h // 10)
     pylab.ylim(0, h + h // 10)
