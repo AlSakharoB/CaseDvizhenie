@@ -80,6 +80,7 @@ def UglOutPut(r, a, s, t, h):
             b.append(y)
     a1.append(r)
     b.append(0)
+    plt.figure(figsize=(6, 6))
     plt.plot(a1, b)
     max = r
     if r < h:
